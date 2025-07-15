@@ -1,15 +1,15 @@
 /* Styles de base */
 :root {
-    --primary-color: #0D5EA6; /* Votre bleu Elite Digital */
-    --accent-color: #FFB823;  /* Votre jaune-orange Elite Digital */
-    --dark-color: #343a40;    /* Texte foncé */
-    --light-color: #f8f9fa;   /* Arrière-plan clair */
-    --white-color: #ffffff;  /* Blanc */
+    --primary-color: #0d5ea6; /* Votre bleu Elite Digital */
+    --accent-color: #ffb823; /* Votre jaune-orange Elite Digital */
+    --dark-color: #343a40; /* Texte foncé */
+    --light-color: #f8f9fa; /* Arrière-plan clair */
+    --white-color: #ffffff; /* Blanc */
 }
 
 body {
     /* Utilisation de Bodoni Moda pour le texte principal */
-    font-family: 'Bodoni Moda', serif;
+    font-family: "Bodoni Moda", serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -22,18 +22,27 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     /* Les titres peuvent garder une police plus audacieuse pour un contraste */
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--dark-color);
     margin-bottom: 20px;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2.5em; }
-h3 { font-size: 1.8em; }
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.8em;
+}
 
 p {
     margin-bottom: 15px;
@@ -51,7 +60,7 @@ a {
     padding: 10px 25px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-family: 'Open Sans', sans-serif; /* Pour que le bouton soit lisible */
+    font-family: "Open Sans", sans-serif; /* Pour que le bouton soit lisible */
 }
 
 .btn:hover {
@@ -63,7 +72,7 @@ a {
 header {
     background-color: var(--white-color);
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -83,7 +92,8 @@ header .logo a {
     align-items: center;
 }
 
-.logo-img { /* Style pour l'image du logo */
+.logo-img {
+    /* Style pour l'image du logo */
     height: 40px; /* Ajustez la taille de votre logo */
     max-width: 100%; /* S'assure que l'image ne déborde pas */
     margin-right: 10px; /* Espace entre le logo et le texte si vous gardez le texte "Elite Digital" à côté de l'image */
@@ -105,7 +115,7 @@ header nav ul li a {
     color: var(--dark-color);
     font-weight: 600;
     transition: color 0.3s ease;
-    font-family: 'Open Sans', sans-serif; /* Pour les liens de navigation */
+    font-family: "Open Sans", sans-serif; /* Pour les liens de navigation */
 }
 
 header nav ul li a:hover {
@@ -131,7 +141,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('WhatsApp Image 2025-07-08 à 08.19.55_9ba03535.jpg') no-repeat center center/cover;
+    background: url("WhatsApp Image 2025-07-08 à 08.19.55_9ba03535.jpg") no-repeat center center/cover;
     color: var(--white-color);
     text-align: center;
     padding: 100px 20px;
@@ -143,7 +153,7 @@ header nav ul li a:hover {
 }
 
 .hero::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -200,9 +210,9 @@ section {
 .about-image img {
     /* Styles pour l'image de la section "À Propos" */
     max-width: 100%; /* L'image ne dépassera jamais la largeur de son conteneur */
-    height: auto;    /* La hauteur s'ajuste proportionnellement pour conserver le ratio */
+    height: auto; /* La hauteur s'ajuste proportionnellement pour conserver le ratio */
     border-radius: 8px; /* Bords légèrement arrondis */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .services-section {
@@ -220,14 +230,16 @@ section {
     background-color: var(--white-color);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .services-section .service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .services-section .service-item img {
@@ -275,7 +287,7 @@ section {
     background-color: rgba(255, 255, 255, 0.15);
     color: var(--white-color);
     font-size: 1em;
-    font-family: 'Open Sans', sans-serif; /* Pour la lisibilité des champs */
+    font-family: "Open Sans", sans-serif; /* Pour la lisibilité des champs */
 }
 
 .contact-form input::placeholder,
@@ -322,9 +334,15 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 2em; }
-    h3 { font-size: 1.5em; }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
 
     header .container {
         flex-wrap: wrap;
@@ -337,7 +355,7 @@ footer {
         flex-direction: column;
         text-align: center;
         background-color: var(--white-color);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
     header nav.active {
