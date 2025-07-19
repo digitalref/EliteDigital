@@ -3,51 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Digital - Votre Partenaire Numérique à Moundou</title>
+    <title>Elite Digital Moundou - Votre Partenaire Digital</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="elite_digital-removebg-preview.png" alt="Elite Digital Logo" class="logo-img">
-                    Elite Digital
+        <nav class="navbar">
+            <div class="container">
+            <a href="#" class="logo">
+                    <img src="elite_digital-removebg-preview.png" alt="Logo Elite Digital Moundou">
                 </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="apropos.html">À Propos</a></li>
-                    <li><a href="Services.html">Nos Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Équipe</a></li>
+                    <li><a href="#training">Formations</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="hero" class="hero-section">
             <div class="container">
-                <h1>Transformons Votre Présence Numérique</h1>
-                <p>Nous concevons des solutions digitales innovantes et sur mesure pour propulser votre entreprise de Moundou vers un succès retentissant en ligne. Laissez-nous bâtir votre avenir digital.</p>
-                <a href="Services.html" class="btn">Découvrez nos Services</a>
+                <h1>Transformez Votre Présence Digitale</h1>
+                <p>Elite Digital Moundou vous aide à bâtir une forte identité en ligne et à atteindre vos objectifs numériques.</p>
+                <a href="#services" class="btn btn-primary">Découvrez Nos Services</a>
             </div>
         </section>
 
-        </main>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Qui Sommes-Nous ?</h2>
+                <div class="about-content">
+                    <p>Elite Digital Moundou est une agence digitale passionnée basée à Moundou, Tchad. Nous sommes dédiés à aider les entreprises et les particuliers à exceller dans le monde numérique. Notre équipe combine créativité, expertise technique et connaissance du marché local pour offrir des solutions sur mesure.</p>
+                    <p>Nous croyons que chaque projet est unique et mérite une approche personnalisée. De la conception de sites web époustouflants au marketing digital stratégique, nous sommes là pour vous accompagner à chaque étape.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Conception & Développement Web</h3>
+                        <p>Sites web modernes, responsifs et performants, adaptés à vos besoins spécifiques.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Marketing Digital</h3>
+                        <p>Stratégies SEO, SMM, publicité en ligne pour accroître votre visibilité et votre clientèle.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design Graphique</h3>
+                        <p>Création de logos, identités visuelles, brochures et supports marketing percutants.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Maintenance & Support IT</h3>
+                        <p>Assistance technique, maintenance de sites web et solutions informatiques fiables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>Notre Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="developpement-de-sites-web-liens-seo-webinar-concept-cyberspace.jpg" alt="Projet 1">
+                        <h3>Nom du Projet 1</h3>
+                        <p>Développement de site e-commerce pour [Client A]</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="idees-de-marketing-partager-le-concept-de-planification-de-la-recherche.jpg" alt="Projet 2">
+                        <h3>Nom du Projet 2</h3>
+                        <p>Campagne de marketing digital pour [Client B]</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="5033.jpg">
+                        <h3>Nom du Projet 3</h3>
+                        <p>Refonte d'identité visuelle pour [Client C]</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2>Notre Équipe</h2>
+                <p class="section-description">Rencontrez les experts derrière Elite Digital Moundou, dédiés à votre succès.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="WhatsApp Image 2025-05-29 à 02.42.55_a640b99b.jpg" alt="Photo Membre 1">
+                        <h3>Nom Membre 1</h3>
+                        <p class="role">Développement</p>
+                        <p>Visionnaire et stratège, il guide notre équipe vers l'excellence.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        </div>
+                        <div class="team-member">
+                        <img src="WhatsApp Image 2025-07-15 à 04.43.06_cd396ed2.jpg" alt="Photo Membre 1">
+                        <h3>Nom Membre 1</h3>
+                        <p class="role">Design Graphique</p>
+                        <p>Visionnaire et stratège, il guide notre équipe vers l'excellence.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="WhatsApp Image 2025-07-15 à 04.34.27_703fba19.jpg" alt="Photo Membre 2">
+                        <h3>Nom Membre 2</h3>
+                        <p class="role">Chef de Projet Web</p>
+                        <p>Expert en développement, il concrétise vos idées en plateformes digitales robustes.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="WhatsApp Image 2025-07-15 à 04.36.23_5eab2ace.jpg" alt="Photo Membre 3">
+                        <h3>Nom Membre 3</h3>
+                        <p class="role">Spécialiste Marketing Digital</p>
+                        <p>Maître des campagnes, il assure votre visibilité et l'engagement de votre audience.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+        </section>
+
+        <section id="training" class="training-section">
+            <div class="container">
+                <h2>Nos Formations en Ligne</h2>
+                <p class="section-description">Développez vos compétences digitales avec nos cours interactifs et nos tutoriels.</p>
+
+                <h3>Tutoriels Vidéo</h3>
+                <div class="video-gallery">
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Titre de la vidéo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4>Introduction au Marketing Digital</h4>
+                        <p>Apprenez les bases pour lancer votre première campagne.</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Titre de la vidéo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4>Créer un Site Web avec HTML/CSS</h4>
+                        <p>Un guide pas à pas pour les débutants.</p>
+                    </div>
+                    </div>
+
+                <h3>Galerie d'Images (Infographies & Cours Visuels)</h3>
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <img src="https://via.placeholder.com/400x300/e0e0e0/333333?text=Infographie+SEO" alt="Infographie SEO">
+                        <h4>Les bases du SEO en 5 étapes</h4>
+                        <p>Une infographie claire pour comprendre le référencement.</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://via.placeholder.com/400x300/e0e0e0/333333?text=Cours+Design" alt="Cours Design Graphique">
+                        <h4>Principes de Design Graphique</h4>
+                        <p>Améliorez l'esthétique de vos créations.</p>
+                    </div>
+                    </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary" style="margin-top: 40px;">Voir toutes nos formations</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contactez-Nous</h2>
+                <p>Prêt à démarrer votre projet digital ? Contactez-nous dès aujourd'hui !</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Elite Digital. Tous droits réservés.</p>
-            <p>Basé à Moundou, Tchad.</p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Elite Digital Moundou</h3>
+                    <p>Votre partenaire pour une présence digitale réussie au Tchad.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#team">Équipe</a></li>
+                        <li><a href="#training">Formations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contactez-nous</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Moundou, Logone Occidental, Tchad</p>
+                    <p><i class="fas fa-phone"></i> +235 XXXXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> contact@elitedigitalmoundou.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Digital Moundou. Tous droits réservés.</p>
+            </div>
         </div>
     </footer>
 
